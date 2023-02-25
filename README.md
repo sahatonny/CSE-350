@@ -1,19 +1,24 @@
-# CSE-350
 <h1 align="center">
-             Medical Predictions Web App 🩺 💊 💉
+             Mental Disorder Prediction Web App 🩺 💊 💉
 </h1>
   
   ![image](https://user-images.githubusercontent.com/78029145/153434524-ca6c416b-3f8e-43ca-8174-6f68789209a5.png)
 
 
-This app is used to predict the medical state of an individual
-The disease sections include ->
+This app is used to predict the likeliness of any individual having mental disorders
+This includes:->
 
-**1. Covid-19**
+**1. Anxiety**
 
-**2. Diabetes**
+**2. Depression**
 
-**3. Heart Disease**
+**3. Suicide**
+
+**4. Bipolar**
+
+**5. Eating Disorder**
+
+**6. PTSD**
 
 ## Tech Stacks Used
 
@@ -27,23 +32,25 @@ The disease sections include ->
 ## Structure Of The Project
 
 - Each prediction page is conneceted with a Machine Learning Model which uses Random Forest Classifier to predict the results.
-- Also we have 3 different datasets used for each prediction.
+- Also we have used different datasets to train the model for each prediction.
 - We can land into each prediction site of the web app from the options in the Navigation Menu.
 
 
-- Each prediction is done with the help of 4 features which will be taken as input from the user.
+- Each prediction is done with the help of some features which will be taken as input from the user.
 - The most relevant features are taken into consideration for prediction also these features can be found out with simple tests or analysis without visiting any doctor.
-- So the victim can get a broad overview of their health condition.
+- So the individual can get a broad overview of their health condition.
 
 ## The features taken into consideration
 
-| Disease | Features |
+| Disorders | Features |
 | - | - |
-| Covid-19 | Dry Cough, Fever, Sore Throat, Breathing Problem |
-| Diabetes | Glucose, Insulin, Body Mass Index(BMI), Age |
-| Heart Disease | Chest Pain, Blood Pressure(BP), Cholestrol, Max Heart Rate(HR) |
+| Anxiety |  |
+| Depression |  |
+| Suicide | |
+| Bipolar | |
+| Eating Disorder | |
+| PTSD | | 
 
-The feature selection is carefully done under the supervision of a medical science student.
 
 ## Deployment Of The Project
 
@@ -53,23 +60,33 @@ After the modeling part the model is deployed using Streamlit library on Streaml
 
 https://share.streamlit.io/bhaswatiroy/medical-predictions-streamlit-web-app/main/app.py
 
-## Link To My Video Explanation -
 
-https://youtu.be/zv6ZIe4RbnQ
 
 ## Glance At The Hosted Application-
 
 ### 1. Home Page
 ![image](https://user-images.githubusercontent.com/78029145/153414617-663dfe56-18eb-47f5-8de6-54aa5d0e0351.png)
 
-### 2. Covid-19 Page
+### 2. About Page
 ![image](https://user-images.githubusercontent.com/78029145/153414774-e1c39199-db5e-4d40-9ed5-bd65edee1bf2.png)
 
-### 3. Diabetes Page
+### 3. Anxiety Page
 ![image](https://user-images.githubusercontent.com/78029145/153414946-8417cd23-6996-41c1-b989-8158cc980e43.png)
 
-### 4. Heart Disease Page
+### 4. Depression Page
 ![image](https://user-images.githubusercontent.com/78029145/153415061-38a25278-c48b-49f2-a6b8-be66817ec8c4.png)
 
-### 5. Plots Page
+### 5. Suicide Page
+![image](https://user-images.githubusercontent.com/78029145/153415061-38a25278-c48b-49f2-a6b8-be66817ec8c4.png)
+
+### 6. Bipolar Page
+![image](https://user-images.githubusercontent.com/78029145/153415061-38a25278-c48b-49f2-a6b8-be66817ec8c4.png)
+
+### 7. Eating Disorder Page
+![image](https://user-images.githubusercontent.com/78029145/153415061-38a25278-c48b-49f2-a6b8-be66817ec8c4.png)
+
+### 8. PTSD Page
+![image](https://user-images.githubusercontent.com/78029145/153415061-38a25278-c48b-49f2-a6b8-be66817ec8c4.png)
+
+### 9. Plots Page
 ![image](https://user-images.githubusercontent.com/78029145/153417820-dbfe50f7-1ce3-43ce-ac7d-4285d4d6f303.png)
