@@ -1,0 +1,6 @@
+Number of meal skip in a day (0-3),Insomnia Level (0-5),Prediction,Probability of Self-harm(0-5)
+2,3,Yes,2
+1,2,No,2
+2,4,Yes,3
+3,4,Yes,3
+2,4,Yes,2
