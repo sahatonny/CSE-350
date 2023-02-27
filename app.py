@@ -43,7 +43,7 @@ if rad=="About":
 
 #Anxiety
 #loading the Anxiety dataset
-df1=pd.read_csv("Anxiety.csv")
+df1=pd.read_csv("Anxiety1.csv")
 #cleaning the data by dropping unneccessary column and dividing the data as features(x1) & target(y1)
 x1=df1.drop("Prediction",axis=1)
 x1=np.array(x1)
@@ -69,11 +69,11 @@ if rad=="Anxiety":
     #drycough=st.number_input("Panic Attack in a week (0-10)",min_value=0,max_value=10,step=1)
     age=st.number_input("Enter your Age",min_value=0,max_value=100,step=1)
     gender =st.radio('Select Gender',['Male','Female','Prefer not to say'])
-    drycough=st.slider("Panic Attack in a week (0-10)",0,10)
+    drycough=st.number_input("Panic Attack in a week (0-10)",0,10)
     #fever=st.number_input("Heart Rate in a week(0-100)",min_value=0,max_value=100,step=1)
-    fever=st.slider("Heart Rate in a minute(0-100)",0,100)
+    fever=st.number_input("Heart Rate in a minute(0-100)",0,100)
     #breathingprob=st.number_input("Breathing Rate in a minute(0-20)",min_value=0,max_value=20,step=1)
-    breathingprob=st.slider("Breathing Rate in a minute(0-20)",0,20)
+    breathingprob=st.number_input("Breathing Rate in a minute(0-20)",0,20)
     #the variable prediction1 predicts by the health state by passing the 4 features to the model
     prediction1=model1.predict([[drycough,fever,breathingprob]])[0]
     
@@ -98,7 +98,7 @@ if rad=="Anxiety":
 #Depression Prediction
 
 #loading Depression dataset
-df2=pd.read_csv("Depression.csv")
+df2=pd.read_csv("Depression1.csv")
 #cleaning the data by dropping unneccessary column and dividing the data as features(x3) & target(y3)
 x2=df2.iloc[:,[0,1,2,3]].values
 x2=np.array(x2)
@@ -151,7 +151,7 @@ if rad=="Depression":
 #Suicide Prediction
 
 #loading the Suicide dataset
-df3=pd.read_csv("Suicide.csv")
+df3=pd.read_csv("Suicide1.csv")
 #cleaning the data by dropping unneccessary column and dividing the data as features(x3) & target(y3)
 x3=df3.iloc[:,[0,1,2]].values
 x3=np.array(x3)
@@ -168,7 +168,7 @@ model3.fit(x3_train,y3_train)
 
 #heading over to the Suicide section
 if rad=="Suicide":
-    st.header("Know If You Are In Danger")
+    st.header("Know If You Are Suicidal")
     st.image("Therapy.png",width=200)
     st.write("All The Values Should Be In Range Mentioned")
     #taking the 4 most important features as input as features -> Chest Pain (chestpain), Blood Pressure-BP (bp), Cholestrol (cholestrol), Maximum HR (maxhr)
@@ -201,7 +201,7 @@ if rad=="Suicide":
         elif str(prediction3)=="NO":
             st.success("You Are Safe!")
         elif prediction3=="no":
-            st.success("You Are Safe")
+            st.success("You Are Safe!")
 
 
 #Bipolar Prediction
@@ -257,7 +257,7 @@ if rad=="Bipolar":
         elif str(prediction4)=="NO":
             st.success("You Are Okay!")
         elif prediction4=="no":
-            st.success("You Are Safe")
+            st.success("You Are Okay!")
 
 
 
@@ -314,7 +314,7 @@ if rad=="Eating Disorder":
         elif str(prediction5)=="NO":
             st.success("You Are Okay!")
         elif prediction5=="no":
-            st.success("You Are Safe")
+            st.success("You Are Okay!")
 
 
 
@@ -347,7 +347,7 @@ if rad=="PTSD":
     age=st.number_input("Enter your Age (0-100)",min_value=0,max_value=100,step=1)
     gender =st.radio('Select Gender',['Male','Female','Prefer not to say'])
     
-    bipolar= st.radio("Select if previous record of manic episode",['Yes','No'])
+    bipolar= st.radio("Select if previous record of self_harm",['Yes','No'])
     suicide= st.radio("Select if previous record of suicide attempt",['Yes','No'])
   
     chestpain=st.number_input("Insomnia Level(0-10)",min_value=0,max_value=10,step=1)
@@ -383,14 +383,14 @@ if rad=="Plots":
     #
     type=st.selectbox("Which Plot Do You Want To See?",["Anxiety","Depression","Suicide","Bipolar","Eating Disorder","PTSD"])
     if type=="Anxiety":
-        fig=px.scatter(df1,x="Panic attack",y="Prediction")
+        fig=px.scatter(df1,x="Panic attack in a week (0-10)",y="Prediction")
         #st.plotly_chart(fig)
         st.line_chart(df1)
         
         #st.map(df1)
 
     elif type=="Depression":
-        fig=px.scatter(df2,x="Emptiness level(0-5)",y="Prediction ")
+        fig=px.scatter(df2,x="Emptiness level(0-5)",y="Insomnia level(0-10)")
         #st.plotly_chart(fig)
         st.bar_chart(df2)
         #st.line_chart(df2)
