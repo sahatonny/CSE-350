@@ -44,12 +44,12 @@ This includes:->
 
 | Disorders | Features |
 | - | - |
-| Anxiety |  |
-| Depression |  |
-| Suicide | |
-| Bipolar | |
-| Eating Disorder | |
-| PTSD | | 
+| Anxiety | Panic Attack , Heart Rate , Breathing Rate |
+| Depression | Anxiety Level, Sadness Level, Insomnia Level, Emptiness Level  |
+| Suicide | Self-harm Level, Anxiety Level, Depression Level |
+| Bipolar |  Depression Level, Energy Level, Self-harm Level |
+| Eating Disorder | Meal Skip, Insomnia Level, Self-harm Probability |
+| PTSD | Insomnia Level, Anxiety Level, Self-harm Level | 
 
 
 ## Deployment Of The Project
@@ -60,33 +60,3 @@ After the modeling part the model is deployed using Streamlit library on Streaml
 
 https://sahatonny-cse-350-app-halfn1.streamlit.app/
 
-
-
-## Glance At The Hosted Application-
-
-### 1. Home Page
-![image](https://user-images.githubusercontent.com/78029145/153414617-663dfe56-18eb-47f5-8de6-54aa5d0e0351.png)
-
-### 2. About Page
-![image](https://user-images.githubusercontent.com/78029145/153414774-e1c39199-db5e-4d40-9ed5-bd65edee1bf2.png)
-
-### 3. Anxiety Page
-![image](https://user-images.githubusercontent.com/78029145/153414946-8417cd23-6996-41c1-b989-8158cc980e43.png)
-
-### 4. Depression Page
-![image](https://user-images.githubusercontent.com/78029145/153415061-38a25278-c48b-49f2-a6b8-be66817ec8c4.png)
-
-### 5. Suicide Page
-![image](https://user-images.githubusercontent.com/78029145/153415061-38a25278-c48b-49f2-a6b8-be66817ec8c4.png)
-
-### 6. Bipolar Page
-![image](https://user-images.githubusercontent.com/78029145/153415061-38a25278-c48b-49f2-a6b8-be66817ec8c4.png)
-
-### 7. Eating Disorder Page
-![image](https://user-images.githubusercontent.com/78029145/153415061-38a25278-c48b-49f2-a6b8-be66817ec8c4.png)
-
-### 8. PTSD Page
-![image](https://user-images.githubusercontent.com/78029145/153415061-38a25278-c48b-49f2-a6b8-be66817ec8c4.png)
-
-### 9. Plots Page
-![image](https://user-images.githubusercontent.com/78029145/153417820-dbfe50f7-1ce3-43ce-ac7d-4285d4d6f303.png)
