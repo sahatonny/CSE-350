@@ -58,7 +58,7 @@ After the modeling part the model is deployed using Streamlit library on Streaml
 
 ## Link To My Web Application -
 
-https://share.streamlit.io/bhaswatiroy/medical-predictions-streamlit-web-app/main/app.py
+https://sahatonny-cse-350-app-halfn1.streamlit.app/
 
 
 
